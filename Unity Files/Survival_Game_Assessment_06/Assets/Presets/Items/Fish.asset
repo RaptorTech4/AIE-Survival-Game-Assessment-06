@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce41b918ceb0fef4583c25f58bf66ee9, type: 3}
-  m_Name: PlayerStamena
+  m_Script: {fileID: 11500000, guid: ced6592f3b358874dbecfed2262e0913, type: 3}
+  m_Name: Fish
   m_EditorClassIdentifier: 
-  Value: 100
-  MaxValue: 100
+  prefab: {fileID: 1177981135248759830, guid: 47b592744cbaa5c43a79a6708c669c3c, type: 3}
+  type: 0
+  description: 
+  RestorHealthValue: 15
+  RestorStaminaValue: 0
