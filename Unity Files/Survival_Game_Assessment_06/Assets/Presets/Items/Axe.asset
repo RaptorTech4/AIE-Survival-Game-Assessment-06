@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b7ba905a8ac3734fa79a938554f10de, type: 3}
-  m_Name: Player Backpack
+  m_Script: {fileID: 11500000, guid: 12a7a7b0e5296e34087dd02ff408e051, type: 3}
+  m_Name: Axe
   m_EditorClassIdentifier: 
-  savePath: /Inventory.save
-  database: {fileID: 11400000, guid: 6df7588f107c735438a5df83ca510043, type: 2}
-  Container: []
+  prefab: {fileID: 1177981135248759830, guid: 47b592744cbaa5c43a79a6708c669c3c, type: 3}
+  type: 1
+  description: 
+  atkBonus: 0
+  DefenceBonus: 0
