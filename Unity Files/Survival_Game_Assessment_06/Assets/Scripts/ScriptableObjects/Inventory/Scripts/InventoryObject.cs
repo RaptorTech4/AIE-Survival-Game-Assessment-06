@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using UnityEditor;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class InventoryObject : ScriptableObject
@@ -14,17 +12,24 @@ public class InventoryObject : ScriptableObject
     public ItemDatabaseObject database;
     public Inventory Container;
 
-    public void AddItem(ItemObject _item, int _amount)
+    public void AddItem(Item _item, int _amount)
     {
+
+        if (_item.buffs.Length > 0)
+        {
+            Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
+            return;
+        }
+
         for (int i = 0; i < Container.Items.Count; i++)
         {
-            if(Container.Items[i].item == _item)
+            if (Container.Items[i].item.Id == _item.Id)
             {
                 Container.Items[i].AddAmount(_amount);
                 return;
             }
         }
-        Container.Items.Add(new InventorySlot(database.GetId[_item], _item, _amount));
+        Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
     }
 
     [ContextMenu("Save")]
@@ -46,7 +51,7 @@ public class InventoryObject : ScriptableObject
     [ContextMenu("Load")]
     public void Load()
     {
-        if(File.Exists(string.Concat(Application.persistentDataPath, savePath)))
+        if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
         {
             //    BinaryFormatter bf = new BinaryFormatter();
             //    FileStream file = File.Open(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
@@ -79,9 +84,9 @@ public class Inventory
 public class InventorySlot
 {
     public int ID;
-    public ItemObject item;
+    public Item item;
     public int amount;
-    public InventorySlot(int _id, ItemObject _item, int _amount )
+    public InventorySlot(int _id, Item _item, int _amount)
     {
         ID = _id;
         item = _item;
