@@ -27,6 +27,18 @@ public class UIManigmentInGame : MonoBehaviour
         LockMouse();
     }
 
+    private void Update()
+    {
+        if(Input.GetButtonDown("Inventory"))
+        {
+            InventoryUI();
+        }
+        if (Input.GetButtonDown("Exit"))
+        {
+            PauseMenuUI();
+        }
+    }
+
     #region PauseMenu
     public void PauseMenuUI()
     {
