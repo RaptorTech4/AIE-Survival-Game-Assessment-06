@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DisplayInventory : MonoBehaviour
+public class UserInterface : MonoBehaviour
 {
     public MouseItem mouseItem = new MouseItem();
 
@@ -129,4 +129,10 @@ public class DisplayInventory : MonoBehaviour
         return new Vector3((X_Start + (X_Space_Between_Item * (i % Number_Of_Colums))), (Y_Start + (-Y_Space_Between_Item * (i / Number_Of_Colums))), 0f);
     }
 }
-
+public class MouseItem
+{
+    public GameObject obj;
+    public InventorySlot item;
+    public InventorySlot hoverItem;
+    public GameObject hoverObj;
+}
