@@ -119,6 +119,8 @@ public class Inventory
 [System.Serializable]
 public class InventorySlot
 {
+    public ItemType[] AllowedItems = new ItemType[0];
+    public UserInterface parent;
     public int ID = -1;
     public Item item;
     public int amount;
