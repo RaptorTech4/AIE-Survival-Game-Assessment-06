@@ -16,6 +16,8 @@ public class EquipmentManager : MonoBehaviour
     }
     #endregion
 
+    public Equipment[] defaultEquipment;
+
     Equipment[] currentEquipment;
     public SkinnedMeshRenderer targetMesh;
     SkinnedMeshRenderer[] currentMeshes;
@@ -32,27 +34,29 @@ public class EquipmentManager : MonoBehaviour
         int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
         currentEquipment = new Equipment[numSlots];
         currentMeshes = new SkinnedMeshRenderer[numSlots];
+        EquipDefaultItems();
+    }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            UnequipAll();
+        }
     }
 
     public void Equip (Equipment newEquipment)
     {
         int slotIndex = (int)newEquipment.equipmentSlot;
-
-        Equipment oldEquipment = null;
-
-        if(currentEquipment[slotIndex] != null)
-        {
-            oldEquipment = currentEquipment[slotIndex];
-            inventory.Add(oldEquipment);
-        }
+        Equipment oldEquipment = Unequip(slotIndex);
 
         if(onEquipmentChanged != null)
         {
             onEquipmentChanged.Invoke(newEquipment,oldEquipment);
         }
 
-        currentEquipment[slotIndex] = newEquipment;
+        SetEquipmentBlendShapes(newEquipment, 100);
 
+        currentEquipment[slotIndex] = newEquipment;
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newEquipment.mesh);
         newMesh.transform.parent = targetMesh.transform;
 
@@ -61,7 +65,7 @@ public class EquipmentManager : MonoBehaviour
         currentMeshes[slotIndex] = newMesh;
     }
 
-    public void Unequip(int slotIndex)
+    public Equipment Unequip(int slotIndex)
     {
         if(currentEquipment[slotIndex] != null)
         {
@@ -72,6 +76,9 @@ public class EquipmentManager : MonoBehaviour
             }
 
             Equipment oldEquipment = currentEquipment[slotIndex];
+
+            SetEquipmentBlendShapes(oldEquipment, 0);
+
             inventory.Add(oldEquipment);
 
             currentEquipment[slotIndex] = null;
@@ -80,7 +87,11 @@ public class EquipmentManager : MonoBehaviour
             {
                 onEquipmentChanged.Invoke(null, oldEquipment);
             }
+
+            return oldEquipment;
+
         }
+        return null;
     }
 
     public void UnequipAll()
@@ -89,13 +100,22 @@ public class EquipmentManager : MonoBehaviour
         {
             Unequip(i);
         }
+        EquipDefaultItems();
     }
 
-    private void Update()
+    void EquipDefaultItems()
     {
-        if(Input.GetKeyDown(KeyCode.U))
+        foreach (Equipment item in defaultEquipment)
         {
-            UnequipAll();
+            Equip(item);
+        }
+    }
+
+    void SetEquipmentBlendShapes(Equipment item,int weight)
+    {
+        foreach (EquipmentMeshRegion blendShape in item.coverdMeshRegions)
+        {
+            targetMesh.SetBlendShapeWeight((int)blendShape, weight);
         }
     }
 
