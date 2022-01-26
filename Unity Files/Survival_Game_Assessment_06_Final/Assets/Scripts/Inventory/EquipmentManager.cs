@@ -76,8 +76,8 @@ public class EquipmentManager : MonoBehaviour
             }
 
             Equipment oldEquipment = currentEquipment[slotIndex];
+            //SetEquipmentBlendShapes(oldEquipment, 0);
 
-            SetEquipmentBlendShapes(oldEquipment, 0);
 
             inventory.Add(oldEquipment);
 
@@ -111,11 +111,12 @@ public class EquipmentManager : MonoBehaviour
         }
     }
 
-    void SetEquipmentBlendShapes(Equipment item,int weight)
+    void SetEquipmentBlendShapes(Equipment item, int weight)
     {
+
         foreach (EquipmentMeshRegion blendShape in item.coverdMeshRegions)
         {
-            targetMesh.SetBlendShapeWeight((int)blendShape, weight);
+            targetMesh.SetBlendShapeWeight((int)blendShape, (float)weight);
         }
     }
 

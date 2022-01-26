@@ -33,6 +33,9 @@ ModelImporter:
   - first:
       74: -4377251739926557069
     second: Body|Grip left
+  - first:
+      74: -236022367644965580
+    second: Armature|Idle (1)
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -140,7 +143,7 @@ ModelImporter:
       quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Chest'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 1
+    animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
     animationCompression: 3
@@ -152,11 +155,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Combat_idle
-      takeName: Armature|Combat_idle
+      name: Armature|Idle (1)
+      takeName: Armature|Idle
       internalID: 0
       firstFrame: 0
-      lastFrame: 38
+      lastFrame: 99
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -441,7 +444,7 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -480,7 +483,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
+    blendShapeNormalImportMode: 0
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
