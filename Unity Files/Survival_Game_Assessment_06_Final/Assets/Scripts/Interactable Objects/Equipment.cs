@@ -23,4 +23,4 @@ public class Equipment : Item
 
 public enum EquipmentSlot { Head, Chest, Legs, Weapon, Shield, Feet}
 
-public enum EquipmentMeshRegion { Legs, Arms, Torso};
+public enum EquipmentMeshRegion {  Arms, Torso, Legs };
