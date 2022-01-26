@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
 
     public void KillPlayer()
     {
-
+        Debug.Log("Player Die");
     }
 
 }
