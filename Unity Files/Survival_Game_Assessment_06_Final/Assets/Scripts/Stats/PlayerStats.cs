@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerStats : CharacterStats
@@ -14,9 +12,9 @@ public class PlayerStats : CharacterStats
     }
 
 
-    void OnEquipmentChanged(Equipment newItem,Equipment oldItem)
+    void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
     {
-        if(newItem != null)
+        if (newItem != null)
         {
 
             if (newItem.RandomValuseSet)
@@ -35,25 +33,41 @@ public class PlayerStats : CharacterStats
             armor.AddModifier(newItem.armorModifier);
             damage.AddModifier(newItem.damageModifier);
 
-            Debug.Log("Adding Modifier");
         }
-        if(oldItem != null)
+        if (oldItem != null)
         {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
 
-            Debug.Log("Removing Modifier");
         }
-            Debug.Log("No Modifier");
     }
 
     void OnItemConsumed(Consumable item)
     {
-        currentHealf += item.healthModifier;
-        if(currentHealf > maxHealf)
+
+        switch (item.consumableType)
         {
-            currentHealf = maxHealf;
+            case ConsumableType.AddCurrentHealth:
+                    currentHealf += item.healthModifier;
+                    if (currentHealf > maxHealf)
+                    {
+                        currentHealf = maxHealf;
+                    }
+                break;
+
+            case ConsumableType.AddMaxHealth:
+                    maxHealf += item.healthModifier;
+                break;
+
+            case ConsumableType.MaxHealth:
+                    currentHealf = maxHealf;
+                break;
+
+            default:
+                break;
         }
+
+
     }
 
     public override void Die()

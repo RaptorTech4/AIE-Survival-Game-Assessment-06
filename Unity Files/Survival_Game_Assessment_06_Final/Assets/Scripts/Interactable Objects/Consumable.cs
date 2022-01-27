@@ -4,6 +4,8 @@ using UnityEngine;
 public class Consumable : Item
 {
 
+    public ConsumableType consumableType;
+
     public override void Use()
     {
         base.Use();
@@ -12,3 +14,5 @@ public class Consumable : Item
     }
 
 }
+
+public enum ConsumableType { AddCurrentHealth, AddMaxHealth, MaxHealth }
