@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ab0d9e0fed9bee4c8d34fabbc4c29ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d583e5d8bcc43e4185a4712d8f40a69, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
   name: Apple
@@ -17,18 +17,4 @@ MonoBehaviour:
   isDefaultItem: 0
   armorModifier: 0
   damageModifier: 0
-  healthModifier: 0
-  addToHealth: 20
-  equipmentSlot: 6
-  mesh: {fileID: 0}
-  coverdMeshRegions: 
-  RandomArmorModifier: 0
-  minArmorModifier: 0
-  maxArmorModifier: 0
-  RandomDamageModifier: 0
-  minDamageModifier: 0
-  maxDamageModifier: 10
-  RandomValuseSet: 0
-  handHeld: 0
-  rightHand: 0
-  leftHand: 0
+  healthModifier: 25

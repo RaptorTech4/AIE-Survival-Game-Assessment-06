@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public float LookRadius = 10f;
 
     Transform target;
     NavMeshAgent agent;
@@ -19,19 +20,21 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-
-        agent.SetDestination(target.position);
-
-        if (distance <= agent.stoppingDistance)
+        if (distance <= LookRadius)
         {
-            CharacterStats targetStats = target.GetComponent<CharacterStats>();
-            if (targetStats != null)
+            agent.SetDestination(target.position);
+
+            if (distance <= agent.stoppingDistance)
             {
+                CharacterStats targetStats = target.GetComponent<CharacterStats>();
+                if (targetStats != null)
+                {
 
-                combat.Attack(targetStats);
+                    combat.Attack(targetStats);
 
+                }
+                FaceTarget();
             }
-            FaceTarget();
         }
     }
 

@@ -25,6 +25,9 @@ public class EquipmentManager : MonoBehaviour
     public delegate void OnEquipmentChanged(Equipment newEquipment, Equipment oldEquipment);
     public event OnEquipmentChanged onEquipmentChanged;
 
+    public delegate void OnItemConsumed(Consumable consumeItem);
+    public event OnItemConsumed onItemConsumed;
+
     Inventory inventory;
 
     private void Start()
@@ -59,7 +62,7 @@ public class EquipmentManager : MonoBehaviour
 
         currentEquipment[slotIndex] = newEquipment;
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newEquipment.mesh);
-        
+
         newMesh.transform.parent = targetMesh.transform;
         newMesh.bones = targetMesh.bones;
 
@@ -124,6 +127,16 @@ public class EquipmentManager : MonoBehaviour
         EquipDefaultItems();
     }
     #endregion Equipment
+
+    public void ConsumeItem(Consumable item)
+    {
+
+        if (onItemConsumed != null)
+        {
+            onItemConsumed.Invoke(item);
+        }
+
+    }
 
 
     void EquipDefaultItems()

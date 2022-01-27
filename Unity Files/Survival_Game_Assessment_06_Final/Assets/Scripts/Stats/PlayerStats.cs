@@ -10,6 +10,7 @@ public class PlayerStats : CharacterStats
     {
         base.Start();
         EquipmentManager.Instance.onEquipmentChanged += OnEquipmentChanged;
+        EquipmentManager.Instance.onItemConsumed += OnItemConsumed;
     }
 
 
@@ -44,6 +45,15 @@ public class PlayerStats : CharacterStats
             Debug.Log("Removing Modifier");
         }
             Debug.Log("No Modifier");
+    }
+
+    void OnItemConsumed(Consumable item)
+    {
+        currentHealf += item.healthModifier;
+        if(currentHealf > maxHealf)
+        {
+            currentHealf = maxHealf;
+        }
     }
 
     public override void Die()

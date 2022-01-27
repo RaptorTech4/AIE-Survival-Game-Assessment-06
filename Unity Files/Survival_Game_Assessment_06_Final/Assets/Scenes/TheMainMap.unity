@@ -605,7 +605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 94304965}
-  item: {fileID: 11400000, guid: 7d8ac9068b250334f8676b61b1419a2f, type: 2}
+  item: {fileID: 11400000, guid: 56a4bf54061c90e4aad4a8b22d70d90a, type: 2}
 --- !u!65 &94304967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3036,6 +3036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealf: 100
+  currentHealf: 0
   damage:
     baseValue: 5
   armor:
@@ -7481,6 +7482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealf: 100
+  currentHealf: 0
   damage:
     baseValue: 5
   armor:
@@ -9543,6 +9545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealf: 100
+  currentHealf: 0
   damage:
     baseValue: 5
   armor:
@@ -10747,6 +10750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealf: 100
+  currentHealf: 0
   damage:
     baseValue: 5
   armor:
@@ -13438,6 +13442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealf: 100
+  currentHealf: 0
   damage:
     baseValue: 10
   armor:

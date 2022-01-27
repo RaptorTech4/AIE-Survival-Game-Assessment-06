@@ -11,9 +11,6 @@ public class InventorySlot : MonoBehaviour
 
     Item item;
 
-    int damigeModifire;
-    int armorModifire;
-
     public void OnButtonEnter()
     {
         Debug.Log("Im Here");
