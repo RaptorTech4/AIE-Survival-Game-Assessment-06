@@ -23,8 +23,6 @@ public class PlayerMotor : MonoBehaviour
             FaceTarget();
         }
     }
-
-    // Update is called once per frame
     public void MoveToPoint(Vector3 point)
     {
         agent.SetDestination(point);

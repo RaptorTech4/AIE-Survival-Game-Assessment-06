@@ -10,22 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ab0d9e0fed9bee4c8d34fabbc4c29ea, type: 3}
-  m_Name: Shield
+  m_Name: Apple
   m_EditorClassIdentifier: 
-  name: Shield
-  icon: {fileID: 21300000, guid: 210f8b183c6aae04e86497747ba744cd, type: 3}
+  name: Apple
+  icon: {fileID: 21300000, guid: 9d14e3cfdff97c3478cfb1774fbf68fd, type: 3}
   isDefaultItem: 0
-  equipmentSlot: 4
-  mesh: {fileID: 9119206664041160178, guid: 2850eb4f5cae9324ebc2f39f1e87f70c, type: 3}
-  coverdMeshRegions: 
   armorModifier: 0
-  RandomArmorModifier: 1
-  minArmorModifier: 0
-  maxArmorModifier: 10
   damageModifier: 0
+  healthModifier: 0
+  addToHealth: 20
+  equipmentSlot: 6
+  mesh: {fileID: 0}
+  coverdMeshRegions: 
+  RandomArmorModifier: 0
+  minArmorModifier: 0
+  maxArmorModifier: 0
   RandomDamageModifier: 0
   minDamageModifier: 0
-  maxDamageModifier: 0
-  handHeld: 1
+  maxDamageModifier: 10
+  RandomValuseSet: 0
+  handHeld: 0
   rightHand: 0
-  leftHand: 1
+  leftHand: 0

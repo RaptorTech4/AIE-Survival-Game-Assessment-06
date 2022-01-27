@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EquipmentManager : MonoBehaviour
@@ -20,6 +18,8 @@ public class EquipmentManager : MonoBehaviour
 
     Equipment[] currentEquipment;
     public SkinnedMeshRenderer targetMesh;
+    public Transform rightHandTargetMesh;
+    public Transform leftHandTargetMesh;
     SkinnedMeshRenderer[] currentMeshes;
 
     public delegate void OnEquipmentChanged(Equipment newEquipment, Equipment oldEquipment);
@@ -38,39 +38,60 @@ public class EquipmentManager : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             UnequipAll();
         }
     }
 
-    public void Equip (Equipment newEquipment)
+    #region Equipment
+    public void Equip(Equipment newEquipment)
     {
         int slotIndex = (int)newEquipment.equipmentSlot;
         Equipment oldEquipment = Unequip(slotIndex);
 
-        if(onEquipmentChanged != null)
+        if (onEquipmentChanged != null)
         {
-            onEquipmentChanged.Invoke(newEquipment,oldEquipment);
+            onEquipmentChanged.Invoke(newEquipment, oldEquipment);
         }
 
         SetEquipmentBlendShapes(newEquipment, 100);
 
         currentEquipment[slotIndex] = newEquipment;
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newEquipment.mesh);
+        
         newMesh.transform.parent = targetMesh.transform;
-
         newMesh.bones = targetMesh.bones;
-        newMesh.rootBone = targetMesh.rootBone;
+
+        if (newEquipment.handHeld)
+        {
+
+            if (newEquipment.rightHand)
+            {
+                newMesh.rootBone = rightHandTargetMesh;
+            }
+            else if (newEquipment.leftHand)
+            {
+                newMesh.rootBone = leftHandTargetMesh;
+            }
+        }
+        else
+        {
+            newMesh.rootBone = targetMesh.rootBone;
+
+        }
+
+
+
         currentMeshes[slotIndex] = newMesh;
     }
 
     public Equipment Unequip(int slotIndex)
     {
-        if(currentEquipment[slotIndex] != null)
+        if (currentEquipment[slotIndex] != null)
         {
 
-            if(currentMeshes[slotIndex] != null)
+            if (currentMeshes[slotIndex] != null)
             {
                 Destroy(currentMeshes[slotIndex].gameObject);
             }
@@ -102,6 +123,8 @@ public class EquipmentManager : MonoBehaviour
         }
         EquipDefaultItems();
     }
+    #endregion Equipment
+
 
     void EquipDefaultItems()
     {

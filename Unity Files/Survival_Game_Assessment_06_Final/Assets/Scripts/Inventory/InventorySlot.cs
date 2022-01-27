@@ -11,6 +11,24 @@ public class InventorySlot : MonoBehaviour
 
     Item item;
 
+    int damigeModifire;
+    int armorModifire;
+
+    public void OnButtonEnter()
+    {
+        Debug.Log("Im Here");
+    }
+
+    public void OnButtonExit()
+    {
+        Debug.Log("Im Not Here");
+    }
+
+    public void UpdateStats(int damige,int armor)
+    {
+
+    }
+
     public void AddItem(Item newItem)
     {
         item = newItem;

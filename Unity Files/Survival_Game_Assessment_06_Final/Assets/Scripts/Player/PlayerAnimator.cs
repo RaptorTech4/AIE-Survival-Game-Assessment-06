@@ -1,24 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class PlayerAnimator : MonoBehaviour
+public class PlayerAnimator : CharacterAnimator
 {
-    const float locomationAnimationSmoothTime = 0.1f;
 
-    NavMeshAgent agent;
-    Animator animator;
+    public WeaponAnimation[] weaponAnimations;
+    Dictionary<Equipment, AnimationClip[]> weaponsAnimationsDictionary;
 
-    void Start()
+    protected override void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponentInChildren<Animator>();
+        base.Start();
+
+        EquipmentManager.Instance.onEquipmentChanged += OnEquipmentChange;
+        weaponsAnimationsDictionary = new Dictionary<Equipment, AnimationClip[]>();
+        foreach (WeaponAnimation a in weaponAnimations)
+        {
+            weaponsAnimationsDictionary.Add(a.weapon, a.clips);
+        }
+
     }
 
-    void Update()
+    void OnEquipmentChange(Equipment newItem, Equipment oldItem)
     {
-        float speedPersent = agent.velocity.magnitude/agent.speed;
-        animator.SetFloat("speedPercent", speedPersent, locomationAnimationSmoothTime, Time.deltaTime);
+        if(newItem != null && newItem.equipmentSlot == EquipmentSlot.Weapon)
+        {
+            animator.SetLayerWeight(1, 1);
+
+            if(weaponsAnimationsDictionary.ContainsKey(newItem))
+            {
+                currentAttackAnimationSet = weaponsAnimationsDictionary[newItem];
+            }
+        }
+        else if(newItem == null && oldItem != null && oldItem.equipmentSlot == EquipmentSlot.Weapon)
+        {
+            animator.SetLayerWeight(1, 0);
+            currentAttackAnimationSet = defaultAttackAnimationSet;
+        }
+
+        if (newItem != null && newItem.equipmentSlot == EquipmentSlot.Shield)
+        {
+            animator.SetLayerWeight(2, 1);
+        }
+        else if (newItem == null && oldItem != null && oldItem.equipmentSlot == EquipmentSlot.Shield)
+        {
+            animator.SetLayerWeight(2, 0);
+
+        }
+
     }
+
+    [System.Serializable]
+    public struct WeaponAnimation
+    {
+        public Equipment weapon;
+        public AnimationClip[] clips;
+    }
+
 }

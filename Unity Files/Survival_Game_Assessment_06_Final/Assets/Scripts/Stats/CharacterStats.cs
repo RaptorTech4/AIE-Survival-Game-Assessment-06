@@ -16,6 +16,11 @@ public class CharacterStats : MonoBehaviour
         currentHealf = maxHealf;
     }
 
+    public virtual void Start()
+    {
+
+    }
+
     public void TakeDamage(int damage)
     {
         damage -= armor.GetValue();

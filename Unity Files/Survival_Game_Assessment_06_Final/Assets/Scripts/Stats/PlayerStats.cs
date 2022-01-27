@@ -6,8 +6,9 @@ public class PlayerStats : CharacterStats
 {
 
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         EquipmentManager.Instance.onEquipmentChanged += OnEquipmentChanged;
     }
 
@@ -15,15 +16,34 @@ public class PlayerStats : CharacterStats
     void OnEquipmentChanged(Equipment newItem,Equipment oldItem)
     {
         if(newItem != null)
-        { 
-        armor.AddModifier(newItem.armorModifier);
-        damage.AddModifier(newItem.damageModifier);
+        {
+
+            if (newItem.RandomValuseSet)
+            {
+                if (newItem.RandomArmorModifier)
+                {
+                    newItem.armorModifier = Random.Range(newItem.minArmorModifier, newItem.maxArmorModifier);
+                }
+                if (newItem.RandomDamageModifier)
+                {
+                    newItem.damageModifier = Random.Range(newItem.minDamageModifier, newItem.maxDamageModifier);
+                }
+                newItem.RandomValuseSet = true;
+            }
+
+            armor.AddModifier(newItem.armorModifier);
+            damage.AddModifier(newItem.damageModifier);
+
+            Debug.Log("Adding Modifier");
         }
         if(oldItem != null)
         {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
+
+            Debug.Log("Removing Modifier");
         }
+            Debug.Log("No Modifier");
     }
 
     public override void Die()

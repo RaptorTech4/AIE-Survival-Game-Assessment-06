@@ -19,4 +19,13 @@ MonoBehaviour:
   mesh: {fileID: 2381787731889182016, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
   coverdMeshRegions: 
   armorModifier: 0
+  RandomArmorModifier: 0
+  minArmorModifier: 0
+  maxArmorModifier: 0
   damageModifier: 0
+  RandomDamageModifier: 1
+  minDamageModifier: 0
+  maxDamageModifier: 10
+  handHeld: 1
+  rightHand: 1
+  leftHand: 0
