@@ -15,14 +15,21 @@ MonoBehaviour:
   name: Helmet
   icon: {fileID: 21300000, guid: 22e94566b681f4944b3c9350245f4182, type: 3}
   isDefaultItem: 0
+  armorModifier: 2
+  damageModifier: 1
+  healthModifier: 0
+  maxHealthModifier: 0
+  RefullHealth: 0
   equipmentSlot: 0
   mesh: {fileID: 4336167354371528865, guid: 24635617d978b0649916fff870f88463, type: 3}
   coverdMeshRegions: 
-  armorModifier: 2
-  RandomArmorModifier: 0
+  RandomArmorModifier: 1
   minArmorModifier: 0
-  maxArmorModifier: 0
-  damageModifier: 1
+  maxArmorModifier: 10
   RandomDamageModifier: 0
   minDamageModifier: 0
   maxDamageModifier: 0
+  RandomValuseSet: 0
+  handHeld: 0
+  rightHand: 0
+  leftHand: 0

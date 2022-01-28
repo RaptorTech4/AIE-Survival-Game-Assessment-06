@@ -11,19 +11,9 @@ public class InventorySlot : MonoBehaviour
 
     Item item;
 
-    public void OnButtonEnter()
+    public void SetItemActive()
     {
-        Debug.Log("Im Here");
-    }
-
-    public void OnButtonExit()
-    {
-        Debug.Log("Im Not Here");
-    }
-
-    public void UpdateStats(int damige,int armor)
-    {
-
+        ItemInfoUI.Instance.UpdateItemInfo(item);
     }
 
     public void AddItem(Item newItem)
@@ -48,13 +38,4 @@ public class InventorySlot : MonoBehaviour
     {
         Inventory.Instance.Remove(item);
     }
-
-    public void UseItem()
-    {
-        if(item != null)
-        {
-            item.Use();
-        }
-    }
-
 }

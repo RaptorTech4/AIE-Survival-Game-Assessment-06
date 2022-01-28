@@ -33,7 +33,6 @@ public class InventoryUI : MonoBehaviour
             if(i < inventory.items.Count)
             {
                 slots[i].AddItem(inventory.items[i]);
-                slots[i].UpdateStats(inventory.items[i].damageModifier, inventory.items[i].armorModifier);
             }
             else
             {

@@ -12,6 +12,8 @@ public class Item : ScriptableObject
     public int armorModifier;
     public int damageModifier;
     public int healthModifier;
+    public int maxHealthModifier;
+    public bool RefullHealth;
 
     public virtual void Use()
     {
