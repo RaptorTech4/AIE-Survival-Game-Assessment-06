@@ -13,6 +13,11 @@ public class Consumable : Item
         RemoveFromInventory();
     }
 
+    public override void UpdateRandomItemValus()
+    {
+        base.UpdateRandomItemValus();
+    }
+
 }
 
 public enum ConsumableType { AddCurrentHealth, AddMaxHealth, MaxHealth }

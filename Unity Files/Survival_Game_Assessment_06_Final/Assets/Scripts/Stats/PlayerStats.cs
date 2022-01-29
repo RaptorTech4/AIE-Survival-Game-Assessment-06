@@ -16,29 +16,13 @@ public class PlayerStats : CharacterStats
     {
         if (newItem != null)
         {
-
-            if (newItem.RandomValuseSet)
-            {
-                if (newItem.RandomArmorModifier)
-                {
-                    newItem.armorModifier = Random.Range(newItem.minArmorModifier, newItem.maxArmorModifier);
-                }
-                if (newItem.RandomDamageModifier)
-                {
-                    newItem.damageModifier = Random.Range(newItem.minDamageModifier, newItem.maxDamageModifier);
-                }
-                newItem.RandomValuseSet = true;
-            }
-
             armor.AddModifier(newItem.armorModifier);
             damage.AddModifier(newItem.damageModifier);
-
         }
         if (oldItem != null)
         {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
-
         }
     }
 

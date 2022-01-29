@@ -25,4 +25,9 @@ public class Item : ScriptableObject
         Inventory.Instance.Remove(this);
     }
 
+    public virtual void UpdateRandomItemValus()
+    {
+
+    }
+
 }

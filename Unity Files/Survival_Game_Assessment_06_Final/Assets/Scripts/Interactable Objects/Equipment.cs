@@ -37,6 +37,24 @@ public class Equipment : Item
         EquipmentManager.Instance.Equip(this);
         RemoveFromInventory();
     }
+
+    public override void UpdateRandomItemValus()
+    {
+        base.UpdateRandomItemValus();
+
+        if (RandomValuseSet)
+        {
+            if (RandomArmorModifier)
+            {
+                armorModifier = Random.Range(minArmorModifier, maxArmorModifier);
+            }
+            if (RandomDamageModifier)
+            {
+                damageModifier = Random.Range(minDamageModifier, maxDamageModifier);
+            }
+            RandomValuseSet = true;
+        }
+    }
 }
 
 public enum EquipmentSlot { Head, Chest, Legs, Weapon, Shield, Feet }
