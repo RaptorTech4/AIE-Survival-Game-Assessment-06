@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 7d1c356c548c70e4890ac29b0c24bf0d, type: 3}
   isDefaultItem: 0
   armorModifier: 0
-  damageModifier: 0
+  damageModifier: 9
   healthModifier: 0
   maxHealthModifier: 0
   RefullHealth: 0
@@ -26,10 +26,10 @@ MonoBehaviour:
   RandomArmorModifier: 0
   minArmorModifier: 0
   maxArmorModifier: 0
-  RandomDamageModifier: 1
+  RandomDamageModifier: 0
   minDamageModifier: 0
   maxDamageModifier: 10
-  RandomValuseSet: 0
+  RandomValuseSet: 1
   handHeld: 1
   rightHand: 1
   leftHand: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: PlatedLegs
   icon: {fileID: 21300000, guid: b04d2705571f0c34fbef04c95f4f98eb, type: 3}
   isDefaultItem: 0
-  armorModifier: 0
+  armorModifier: 7
   damageModifier: 0
   healthModifier: 0
   maxHealthModifier: 0
@@ -23,13 +23,13 @@ MonoBehaviour:
   equipmentSlot: 2
   mesh: {fileID: 3902355135430805262, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
   coverdMeshRegions: 02000000
-  RandomArmorModifier: 1
+  RandomArmorModifier: 0
   minArmorModifier: 0
   maxArmorModifier: 10
   RandomDamageModifier: 0
   minDamageModifier: 0
   maxDamageModifier: 0
-  RandomValuseSet: 0
+  RandomValuseSet: 1
   handHeld: 0
   rightHand: 0
   leftHand: 0

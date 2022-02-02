@@ -58,7 +58,7 @@ public class EquipmentManager : MonoBehaviour
             onEquipmentChanged.Invoke(newEquipment, oldEquipment);
         }
 
-        SetEquipmentBlendShapes(newEquipment, 100);
+        //SetEquipmentBlendShapes(newEquipment, 100);
 
         currentEquipment[slotIndex] = newEquipment;
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newEquipment.mesh);

@@ -23,7 +23,7 @@ public class Equipment : Item
     public int minDamageModifier;
     public int maxDamageModifier;
 
-    [HideInInspector] public bool RandomValuseSet;
+    [HideInInspector] public bool RandomValuseSet = false;
 
     [Header("HandHeld")]
     public bool handHeld;
@@ -42,7 +42,7 @@ public class Equipment : Item
     {
         base.UpdateRandomItemValus();
 
-        if (RandomValuseSet)
+        if (!RandomValuseSet)
         {
             if (RandomArmorModifier)
             {
@@ -53,6 +53,7 @@ public class Equipment : Item
                 damageModifier = Random.Range(minDamageModifier, maxDamageModifier);
             }
             RandomValuseSet = true;
+            Debug.Log("Update Item");
         }
     }
 }

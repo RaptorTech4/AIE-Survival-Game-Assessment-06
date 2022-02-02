@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     #region Canvas
     [SerializeField] Canvas mainInfo;
+    [SerializeField] GameObject inventoryUI;
     [SerializeField] Canvas pauseInfo;
     [SerializeField] Canvas quitToMainMenu;
     [SerializeField] Canvas quitToDesctop;
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        HideAllUI();
+        mainInfo.enabled = true;
         
     }
 
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour
     public void HideAllUI()
     {
         mainInfo.enabled = false;
+        inventoryUI.SetActive(false);
         pauseInfo.enabled = false;
         quitToMainMenu.enabled = false;
         quitToDesctop.enabled = false;
@@ -52,7 +56,20 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        
 
+        switch (pauseInfo.enabled)
+        {
+            case false:
+                HideAllUI();
+                pauseInfo.enabled = true;
+                Time.timeScale = 0.0f;
+                break;
+            case true:
+                HideAllUI();
+                Time.timeScale = 1.0f;
+                break;
+        }
     }
 
     public void QuitToMainMenu()
