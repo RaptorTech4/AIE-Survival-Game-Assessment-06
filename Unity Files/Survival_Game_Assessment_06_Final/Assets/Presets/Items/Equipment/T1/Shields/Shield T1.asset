@@ -21,7 +21,7 @@ MonoBehaviour:
   maxHealthModifier: 0
   RefullHealth: 0
   equipmentSlot: 4
-  mesh: {fileID: 9119206664041160178, guid: 2850eb4f5cae9324ebc2f39f1e87f70c, type: 3}
+  mesh: {fileID: 7177198633453575359, guid: 2850eb4f5cae9324ebc2f39f1e87f70c, type: 3}
   coverdMeshRegions: 
   RandomArmorModifier: 0
   minArmorModifier: 0

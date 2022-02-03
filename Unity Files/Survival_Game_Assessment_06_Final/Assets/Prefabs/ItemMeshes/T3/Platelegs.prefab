@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1095651518907983968}
-  - component: {fileID: 6549024133637009763}
-  - component: {fileID: 6549024133637009764}
+  - component: {fileID: 2562394784323355408}
   m_Layer: 0
   m_Name: Platelegs
   m_TagString: Untagged
@@ -26,14 +25,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3344144410940577379}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.000000008691273, y: 0.6035802, z: -0.018374318}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!23 &6549024133637009763
-MeshRenderer:
+--- !u!137 &2562394784323355408
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46,15 +45,15 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 3
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31e23089ac1104e40a16e44be471db49, type: 2}
-  - {fileID: 2100000, guid: a283c057a447a634e9e9daa42631d65a, type: 2}
-  - {fileID: 2100000, guid: a986f78d7a2e82f4985b0a7e11875c5a, type: 2}
-  - {fileID: 2100000, guid: c48de6658dad53a489ae358ef56ac030, type: 2}
+  - {fileID: 2100000, guid: 594dccce6472b3a42bb2004453029db9, type: 2}
+  - {fileID: 2100000, guid: cdec8f1edf8f3f846bcb15227794ca02, type: 2}
+  - {fileID: 2100000, guid: e12d511588006d94eaa8b68c71972b1d, type: 2}
+  - {fileID: 2100000, guid: 3df022c4583d654438d17540418e11b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,12 +74,15 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &6549024133637009764
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344144410940577379}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 5633882701226501996, guid: 6ca61486a834fa74fba1984bd08e64fb, type: 3}
+  m_Bones: []
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_DirtyAABB: 0
