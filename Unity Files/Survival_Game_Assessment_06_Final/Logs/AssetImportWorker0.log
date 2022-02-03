@@ -13324,3 +13324,227 @@ Received Import Request.
 Start importing Assets/Presets/Items/Equipment/T3/Swords/Sword 3 T3.asset using Guid(b31ed0309b25d664190084206b349cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffe4c9641862a1b871d3a54e4c5c2a5') in 0.003893 seconds 
   Import took 0.009782 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 586.449190 seconds.
+  path: Assets/Sprites/Inventory/Icons/Apple Icons.png
+  artifactKey: Guid(8b539ad229c459648bdb6e776fb16b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Apple Icons.png using Guid(8b539ad229c459648bdb6e776fb16b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0789bd058d83a44fd72fe032e8df96ea') in 0.013911 seconds 
+  Import took 0.022172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.687624 seconds.
+  path: Assets/Sprites/Inventory/Icons/Apple Icons.png
+  artifactKey: Guid(8b539ad229c459648bdb6e776fb16b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Apple Icons.png using Guid(8b539ad229c459648bdb6e776fb16b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6bb256daa69ad0a8084dad920b7c8d') in 0.018040 seconds 
+  Import took 0.023266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4821.489893 seconds.
+  path: Assets/Sprites/Inventory/Icons/Add 50% Health Icon.png
+  artifactKey: Guid(2e86c5ab3ae090f40b78450ad70d5e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Add 50% Health Icon.png using Guid(2e86c5ab3ae090f40b78450ad70d5e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a440ad0e32936ee986c6fa42e871893b') in 0.037392 seconds 
+  Import took 0.044369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Sprites/Inventory/Icons/Add Max Health Icon.png
+  artifactKey: Guid(441eb532f22bb434c804857da4c56b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Add Max Health Icon.png using Guid(441eb532f22bb434c804857da4c56b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffae4c5d1b8e302f51dd5ce3ec11d97') in 0.016664 seconds 
+  Import took 0.023618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.507737 seconds.
+  path: Assets/Sprites/Inventory/Icons/Add 50% Health Icon.png
+  artifactKey: Guid(2e86c5ab3ae090f40b78450ad70d5e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Add 50% Health Icon.png using Guid(2e86c5ab3ae090f40b78450ad70d5e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c31696e824af771fd447df795c31b3c') in 0.016433 seconds 
+  Import took 0.024125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Sprites/Inventory/Icons/Add Max Health Icon.png
+  artifactKey: Guid(441eb532f22bb434c804857da4c56b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Icons/Add Max Health Icon.png using Guid(441eb532f22bb434c804857da4c56b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130d9d809ff31e3351db5844894384db') in 0.017737 seconds 
+  Import took 0.023435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.512813 seconds.
+  path: Assets/Presets/Items/Consumeble/Apple 1.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Apple 1.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2dbabdf73a66a4f10db1d5eba644a8') in 0.009154 seconds 
+  Import took 0.016220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Presets/Items/Consumeble/Apple.asset
+  artifactKey: Guid(56a4bf54061c90e4aad4a8b22d70d90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Apple.asset using Guid(56a4bf54061c90e4aad4a8b22d70d90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd25d5ac7eb6365f8d68aa8a00f5dc5') in 0.008379 seconds 
+  Import took 0.014820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.262571 seconds.
+  path: Assets/Presets/Items/Consumeble/Apple 1.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Apple 1.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76350b1e3000600e27d37145267136fa') in 0.002732 seconds 
+  Import took 0.008426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Presets/Items/Consumeble/Apple 2.asset
+  artifactKey: Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Apple 2.asset using Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b3d8e9dfdb7499f32699a076e4806a7') in 0.007991 seconds 
+  Import took 0.014456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.964220 seconds.
+  path: Assets/Presets/Items/Consumeble/50% Health.asset
+  artifactKey: Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/50% Health.asset using Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c315e0d1edb6bc3c61774bdc22beb6') in 0.007298 seconds 
+  Import took 0.014467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.449745 seconds.
+  path: Assets/Presets/Items/Consumeble/Add Max Health.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add Max Health.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65edc9b1afe0ca0e58c5cf0521b6dbe2') in 0.006292 seconds 
+  Import took 0.013380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.374898 seconds.
+  path: Assets/Presets/Items/Consumeble/50% Health.asset
+  artifactKey: Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/50% Health.asset using Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f840fbb77c0f5c398125039d45467c') in 0.003351 seconds 
+  Import took 0.010245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Presets/Items/Consumeble/Add Max Health.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add Max Health.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3ee31a86b94d712041949870e0c875') in 0.002873 seconds 
+  Import took 0.009209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.557953 seconds.
+  path: Assets/Presets/Items/Consumeble/Add Max Health.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add Max Health.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78785eaeeef679dbc4e0ce84764aa833') in 0.003663 seconds 
+  Import took 0.009981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Presets/Items/Consumeble/Apple.asset
+  artifactKey: Guid(56a4bf54061c90e4aad4a8b22d70d90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Apple.asset using Guid(56a4bf54061c90e4aad4a8b22d70d90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b005a1d55035d2c1cfe023e1bd03d0') in 0.004981 seconds 
+  Import took 0.010757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.231217 seconds.
+  path: Assets/Presets/Items/Consumeble/50% Health 1.asset
+  artifactKey: Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/50% Health 1.asset using Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00afc4098664ee4e9ab84c94a03f4be') in 0.008539 seconds 
+  Import took 0.015818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.821134 seconds.
+  path: Assets/Presets/Items/Consumeble/50% Health 1.asset
+  artifactKey: Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/50% Health 1.asset using Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f1db0b2307887d33c6382fce8d154c') in 0.003914 seconds 
+  Import took 0.010568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Presets/Items/Consumeble/Add Max Health 1.asset
+  artifactKey: Guid(73222f7070a3a3742a81b9293526043e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add Max Health 1.asset using Guid(73222f7070a3a3742a81b9293526043e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6a2843c515835f9e43d9ea3c247f37') in 0.006490 seconds 
+  Import took 0.014372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.054141 seconds.
+  path: Assets/Presets/Items/Consumeble/25% Health.asset
+  artifactKey: Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/25% Health.asset using Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651cc604a7c62ec0de19df0cac3bac0b') in 0.008813 seconds 
+  Import took 0.014323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.608096 seconds.
+  path: Assets/Presets/Items/Consumeble/Add 25 Max Health.asset
+  artifactKey: Guid(73222f7070a3a3742a81b9293526043e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add 25 Max Health.asset using Guid(73222f7070a3a3742a81b9293526043e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5ad619605a5ca64752269cd16bbae6') in 0.008112 seconds 
+  Import took 0.014158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.453430 seconds.
+  path: Assets/Presets/Items/Consumeble/Add 50 Max Health.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add 50 Max Health.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71cf0676e8323c6af0c75da15173be0') in 0.008048 seconds 
+  Import took 0.014299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.790144 seconds.
+  path: Assets/Presets/Items/Consumeble/50 Health.asset
+  artifactKey: Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/50 Health.asset using Guid(28384a371dbd4fb4d9f7f75ba4f83dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7103856a80e99047b55246db14e668') in 0.007847 seconds 
+  Import took 0.016079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.216938 seconds.
+  path: Assets/Presets/Items/Consumeble/25 Health.asset
+  artifactKey: Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/25 Health.asset using Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c37a2786a5ff75171c1f2ff4d83c522') in 0.006705 seconds 
+  Import took 0.013554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.300633 seconds.
+  path: Assets/Presets/Items/Consumeble/25 Health.asset
+  artifactKey: Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/25 Health.asset using Guid(74e7779b0d900f74babe5de5f3f47ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976b0681d9905ce8a24ce075ce4d23f6') in 0.003183 seconds 
+  Import took 0.010616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Presets/Items/Consumeble/Add 50 Max Health.asset
+  artifactKey: Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Presets/Items/Consumeble/Add 50 Max Health.asset using Guid(57c0d01bbe94f5a47883a5bca5302522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e8392152b78fa3c5abe0fd2e6f1bb4') in 0.003792 seconds 
+  Import took 0.009953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2353.701328 seconds.
+  path: Assets/Materials/Player/T3/Emblem.mat
+  artifactKey: Guid(169bc0ec8b4ea974d84edfffe519ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player/T3/Emblem.mat using Guid(169bc0ec8b4ea974d84edfffe519ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a8882f65f7b905e646cd0d6c688d00') in 0.022323 seconds 
+  Import took 0.032238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Materials/Player/T3/Wood.mat
+  artifactKey: Guid(2b296fe9a29c3874baf377c44863d963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player/T3/Wood.mat using Guid(2b296fe9a29c3874baf377c44863d963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd34dfa866f2ac2009812106284dc37b') in 0.016823 seconds 
+  Import took 0.025772 seconds .
+
