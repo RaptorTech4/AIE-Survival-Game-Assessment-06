@@ -68,6 +68,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2551813606751795119}
     m_Modifications:
+    - target: {fileID: 2551813607226259208, guid: 2850eb4f5cae9324ebc2f39f1e87f70c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f6d594bba59549543922b8b6b44777f7, type: 2}
     - target: {fileID: 4152996719551580104, guid: 2850eb4f5cae9324ebc2f39f1e87f70c, type: 3}
       propertyPath: m_Name
       value: Shield

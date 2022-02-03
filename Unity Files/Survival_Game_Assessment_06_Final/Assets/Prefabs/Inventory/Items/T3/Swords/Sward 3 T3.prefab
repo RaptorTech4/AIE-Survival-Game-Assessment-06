@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 5339402909466006735}
-  item: {fileID: 11400000, guid: 060b077fdd3102848adf5d4343d483b1, type: 2}
+  item: {fileID: 11400000, guid: b31ed0309b25d664190084206b349cd6, type: 2}
 --- !u!1001 &5339402910472813774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,6 +72,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 5339402910472813770, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 594dccce6472b3a42bb2004453029db9, type: 2}
+    - target: {fileID: 5339402910472813770, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: cdec8f1edf8f3f846bcb15227794ca02, type: 2}
     - target: {fileID: 8424432942680569232, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
       propertyPath: m_RootOrder
       value: 0

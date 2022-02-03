@@ -72,6 +72,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 5339402910472813770, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 492241fbdce88964181bcb856ac21c0c, type: 2}
+    - target: {fileID: 5339402910472813770, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f612bcca0178f646a7a6c59f39fd336, type: 2}
     - target: {fileID: 8424432942680569232, guid: bd9662452afc1f947a9400c7ee82cd1b, type: 3}
       propertyPath: m_RootOrder
       value: 0

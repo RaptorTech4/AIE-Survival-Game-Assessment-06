@@ -116,6 +116,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platelegs
       objectReference: {fileID: 0}
+    - target: {fileID: 6549024133637009763, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e12d511588006d94eaa8b68c71972b1d, type: 2}
+    - target: {fileID: 6549024133637009763, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cdec8f1edf8f3f846bcb15227794ca02, type: 2}
+    - target: {fileID: 6549024133637009763, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 594dccce6472b3a42bb2004453029db9, type: 2}
+    - target: {fileID: 6549024133637009763, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3df022c4583d654438d17540418e11b6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 771343716ca6aef4d8ea1feaa50b1a25, type: 3}
 --- !u!4 &6185209753468426503 stripped
