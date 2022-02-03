@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlateBody 7 T2
   m_EditorClassIdentifier: 
   name: Plated Body
-  icon: {fileID: 21300000, guid: 576f55e20b3bd674eb05b50b3b97858b, type: 3}
+  icon: {fileID: 21300000, guid: 15e2fe8ade0e909458299d3864a7549c, type: 3}
   isDefaultItem: 0
   armorModifier: 18
   damageModifier: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlatedLegs 1 T3
   m_EditorClassIdentifier: 
   name: PlatedLegs
-  icon: {fileID: 21300000, guid: b04d2705571f0c34fbef04c95f4f98eb, type: 3}
+  icon: {fileID: 21300000, guid: c02cfe990f21826448a1bd18e490a8c2, type: 3}
   isDefaultItem: 0
   armorModifier: 22
   damageModifier: 0
