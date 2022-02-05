@@ -20,8 +20,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-        if (distance <= LookRadius)
-        {
+        //if (distance <= LookRadius)
+        //{
             agent.SetDestination(target.position);
 
             if (distance <= agent.stoppingDistance)
@@ -35,7 +35,7 @@ public class EnemyController : MonoBehaviour
                 }
                 FaceTarget();
             }
-        }
+        //}
     }
 
     void FaceTarget()

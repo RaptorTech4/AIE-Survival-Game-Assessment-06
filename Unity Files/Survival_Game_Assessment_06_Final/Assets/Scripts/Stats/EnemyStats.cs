@@ -13,7 +13,10 @@ public class EnemyStats : CharacterStats
     [SerializeField] int maxArmorModefire;
     #endregion Modefire
 
-    [SerializeField] DroppebleItems droppebleItems;
+    [SerializeField] DroppebleItems droppebleEquipmentItems;
+    [SerializeField] GameObject equipmentDropLocation;
+    [SerializeField] DroppebleItems droppebleConsumableItems;
+    [SerializeField] GameObject consumableDropLocation;
 
     public override void Start()
     {
@@ -29,9 +32,14 @@ public class EnemyStats : CharacterStats
     {
         base.Die();
 
-        if(droppebleItems != null)
+        if(droppebleEquipmentItems != null)
         {
-            droppebleItems.SpawnRandomObject(gameObject.transform);
+            droppebleEquipmentItems.SpawnRandomObject(equipmentDropLocation.transform);
+        }
+
+        if (droppebleConsumableItems != null)
+        {
+            droppebleConsumableItems.SpawnRandomObject(consumableDropLocation.transform);
         }
 
         Destroy(gameObject);

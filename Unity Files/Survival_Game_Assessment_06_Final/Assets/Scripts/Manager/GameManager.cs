@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Canvas
+    [Header("UI")]
     [SerializeField] Canvas mainInfo;
     [SerializeField] GameObject inventoryUI;
     [SerializeField] Canvas pauseInfo;
@@ -27,6 +28,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] Canvas quitToDesctop;
     #endregion Canvas
 
+    #region Enemy
+    [Header("Enemy prefabs")]
+    [SerializeField] GameObject t1Enemy;
+    [SerializeField] GameObject t2Enemy;
+    [SerializeField] GameObject t3Enemy;
+    [Header("Spawn Locations")]
+    [SerializeField] GameObject[] SpawnLocations;
+    #endregion
 
     private void Start()
     {
@@ -83,4 +92,21 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion UI
+
+    #region Player
+
+    public void PlayerDie()
+    {
+
+    }
+
+    #endregion
+
+    #region Enemy
+    public void SpawnEnemy()
+    {
+
+    }
+    #endregion
+
 }

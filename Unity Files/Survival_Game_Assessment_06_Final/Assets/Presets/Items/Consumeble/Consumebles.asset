@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da7caf3cb98e7c4b9213b4264a05aa0, type: 3}
+  m_Name: Consumebles
+  m_EditorClassIdentifier: 
+  droppableObjects:
+  - {fileID: 8680567004544582457, guid: 7a1f02c86ac96b04d9fa7a153693ef5e, type: 3}
+  - {fileID: 2798177004788424593, guid: 4be5d6001972f2d4389ea46e53848f05, type: 3}
+  - {fileID: 6794817976417215766, guid: 5b629e4d0c743984487b2f85cf402ee9, type: 3}
+  - {fileID: 2454726957701281498, guid: c9d8cca78eb0f1d4193c7c80e71fdceb, type: 3}
+  - {fileID: 2483800655275613141, guid: 2ac2e706ce77f6043b89069ebd74bbf3, type: 3}

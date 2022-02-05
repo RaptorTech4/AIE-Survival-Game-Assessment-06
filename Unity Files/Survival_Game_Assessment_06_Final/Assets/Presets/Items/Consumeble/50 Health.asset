@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d583e5d8bcc43e4185a4712d8f40a69, type: 3}
   m_Name: 50 Health
   m_EditorClassIdentifier: 
-  name: Apple
+  name: 50 Health Potions
   icon: {fileID: 21300000, guid: 2e86c5ab3ae090f40b78450ad70d5e0e, type: 3}
   isDefaultItem: 0
   armorModifier: 0

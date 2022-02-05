@@ -33,16 +33,11 @@ public class CharacterStats : MonoBehaviour
         {
             currentHealf -= damage;
         }
-        else
-        {
-            currentHealf -= 5;
-        }
-
+        
         if(OnHealthChanged != null)
         {
             OnHealthChanged(maxHealf,currentHealf);
         }
-
         if(currentHealf <= 0)
         {
             Die();
