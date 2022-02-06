@@ -18,6 +18,8 @@ public class EnemyStats : CharacterStats
     [SerializeField] DroppebleItems droppebleConsumableItems;
     [SerializeField] GameObject consumableDropLocation;
 
+    int randomChanse;
+
     public override void Start()
     {
         base.Start();
@@ -31,6 +33,7 @@ public class EnemyStats : CharacterStats
     public override void Die()
     {
         base.Die();
+        randomChanse = Random.Range(0,1);
 
         if(droppebleEquipmentItems != null)
         {
@@ -39,7 +42,8 @@ public class EnemyStats : CharacterStats
 
         if (droppebleConsumableItems != null)
         {
-            droppebleConsumableItems.SpawnRandomObject(consumableDropLocation.transform);
+            if(randomChanse==1)
+                droppebleConsumableItems.SpawnRandomObject(consumableDropLocation.transform);
         }
 
         Destroy(gameObject);
