@@ -20,10 +20,7 @@ public class InventoryUI : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Inventory"))
-        {
-            inventoryUI.SetActive(!inventoryUI.activeSelf);
-        }
+        
     }
 
     void UpdateUI()

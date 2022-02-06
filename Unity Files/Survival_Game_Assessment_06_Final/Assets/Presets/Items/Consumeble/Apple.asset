@@ -20,4 +20,4 @@ MonoBehaviour:
   healthModifier: 0
   maxHealthModifier: 0
   RefullHealth: 1
-  consumableType: 0
+  consumableType: 2

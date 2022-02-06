@@ -40,7 +40,7 @@ public class PlayerStats : CharacterStats
                 break;
 
             case ConsumableType.AddMaxHealth:
-                    maxHealf += item.healthModifier;
+                    maxHealf += item.maxHealthModifier;
                 break;
 
             case ConsumableType.MaxHealth:

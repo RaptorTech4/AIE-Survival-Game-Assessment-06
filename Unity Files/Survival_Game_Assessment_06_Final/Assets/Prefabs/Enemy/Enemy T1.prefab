@@ -210,10 +210,10 @@ MonoBehaviour:
   maxHealf: 100
   currentHealf: 0
   damage:
-    baseValue: 7
+    baseValue: 5
   armor:
     baseValue: 0
-  randomModefire: 1
+  randomModefire: 0
   minDamigeModefire: 0
   maxDamigeModefire: 10
   minArmorModefire: 0

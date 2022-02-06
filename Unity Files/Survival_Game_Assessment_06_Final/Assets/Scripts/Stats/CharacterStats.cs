@@ -33,6 +33,10 @@ public class CharacterStats : MonoBehaviour
         {
             currentHealf -= damage;
         }
+        else
+        {
+            currentHealf--;
+        }
         
         if(OnHealthChanged != null)
         {
